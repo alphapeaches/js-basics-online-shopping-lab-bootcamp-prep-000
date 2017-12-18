@@ -57,7 +57,7 @@ function removeFromCart(item) {
   // write your code here
   var gone;
   for (var i = 0; i < cart.length; i++){
-  if (cart.hasOwnProperty(item)){
+  if (cart[i].hasOwnProperty(item)){
   cart.splice(i);
   gone = 2;
   } 
