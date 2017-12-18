@@ -38,7 +38,7 @@ function viewCart() {
     for (var i = 0; i < cart.length - 1; i ++){
       daCart = daCart + `${items[i]} at $${prices[i]}, `;
     }
-    daCart = `${daCart}and ${items[cart.length]} at $${prices[cart.length]}.`;
+    daCart = `${daCart}and ${items[cart.length - 1]} at $${prices[cart.length]}.`;
     console.log(daCart);
   }
   return cart;
